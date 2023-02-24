@@ -4,7 +4,7 @@ Load balancer
 
 ***Prerequisite***: Learn first eureka, feign client, bais of spring boot
 
-- ***Step 1**
+- ***Step 1***
   
 Remove url in proxy class  
   
@@ -17,7 +17,8 @@ public interface CurrencyExchangeProxy {
     public CurrencyConversion getCurrencyExchange(@PathVariable String from, @PathVariable String to);  
   
 }  
-  
+```
+
 - ***Step 2***:  by default load balancing is available in eureka-client hierarchy previously 
 we are using ribbion
 
